@@ -1,7 +1,7 @@
 print('Ejercicio de POO avanzado')
 
 class autor:
-    def __init__(self,nombre,apellidos)
+    def __init__(self,nombre,apellidos):
         self.nombre = nombre
         self.apellidos = apellidos
     def getAutor(self):
@@ -24,3 +24,10 @@ class libro:
 class biblioteca:
     def __init__(self):
         self.listaLibros = []
+    def countLibros(self):
+        return len(self.listaLibros)
+    def setLibro(self,name):
+        self.listaLibros = self.listaLibros + [name]
+
+biblioteca = biblioteca()
+print(biblioteca.countLibros())
