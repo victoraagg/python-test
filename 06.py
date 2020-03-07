@@ -1,22 +1,26 @@
-def esNum(num):
-    try:
-        float(num)
-        return True
-    except:
-        return False
-    
-base = input("Base triángulo: ")
-while not esNum(base):
-    print("El dato no es un número")
-    base = input("Base triángulo: ")
-    
-altura = input("Altura triángulo: ")
-while not esNum(altura):
-    print("El dato no es un número")
-    altura = input("Base triángulo: ")
+print('Ejercicio de POO avanzado')
 
-baseCast = float(base)
-alturaCast = float(altura)
+class autor:
+    def __init__(self,nombre,apellidos)
+        self.nombre = nombre
+        self.apellidos = apellidos
+    def getAutor(self):
+        print('Autor:',self.nombre,self.apellidos)
+        
+class libro:
+    def __init__(self,titulo,isbn):
+        self.titulo = titulo
+        self.isbn = isbn
+    def setAutor(self,autor):
+        self.autor = autor
+    def getLibro(self):
+        print('- LIBRO --')
+        self.autor.getAutor()
+        print('Título:',self.titulo)
+        print('ISBN:',self.isbn)
+    def getTitulo(self):
+        return self.titulo
 
-area = baseCast * alturaCast / 2
-print("Superficie triángulo:",round(area, 2))
+class biblioteca:
+    def __init__(self):
+        self.listaLibros = []

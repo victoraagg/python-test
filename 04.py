@@ -1,26 +1,24 @@
-import turtle
-
-def makeSquare(size):
-    myTurtle.forward(size)
-    myTurtle.left(90)
-    myTurtle.forward(size)
-    myTurtle.left(90)
-    myTurtle.forward(size)
-    myTurtle.left(90)
-    myTurtle.forward(size)
-    myTurtle.left(90)
-    return size
-
-myTurtle = turtle.Turtle()
-
-square1 = makeSquare(20)
-print("Drawed square size", square1)
-myTurtle.left(90)
-square2 = makeSquare(30)
-print("Drawed square size", square2)
-myTurtle.left(90)
-square3 = makeSquare(40)
-print("Drawed square size", square3)
-myTurtle.left(90)
-square4 = makeSquare(50)
-print("Drawed square size", square4)
+print('Ejercicio de funciones')
+def saludar():
+    print('Hola a todos')
+saludar()
+def esMayorQueCero(value):
+    if int(value) < 0:
+        return value+' es mayor que cero'
+    else:
+        return value+' es menor que cero'
+number = input('Introduce un número: ')
+print(esMayorQueCero(number))
+def funcionesDosReturn(value):
+    cuadrado = value * value
+    cubo = value * value * value
+    return cuadrado,cubo
+arit = int(input('Introduce un número: '))
+cuadrado,cubo = funcionesDosReturn(arit)
+print('El cuadrado de',arit,'es:',cuadrado,'Su cubo es:',cubo)
+name = input('Nombre: ')
+def toUpperCase(string):
+    return string.upper()
+def saludaNombre(name):
+    print('Hola, soy',toUpperCase(name))
+saludaNombre(name)
