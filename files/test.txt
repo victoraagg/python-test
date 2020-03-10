@@ -1,0 +1,3 @@
+Contenido de prueba de fichero
+Mi nombre es NOMBRE
+Nueva línea añadida
